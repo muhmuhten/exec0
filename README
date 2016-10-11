@@ -13,3 +13,9 @@ behaviour depends on the name they're called by.
 Additionally, it can be used to run a program with no arguments at all, which
 on many systems cannot be achieved at all using standard utilities. Note that
 programs are likely to misbehave when called this way.
+
+Caveats
+-------
+
+This program uses the BSD error functions gratuitously. It would take longer to
+justify than to replace them, but they're pretty widely available anyway.
