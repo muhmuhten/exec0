@@ -1,0 +1,15 @@
+exec0 - run a program with all arguments explicitly specified
+=============================================================
+
+Usage
+-----
+
+	exec0 prog argv...
+
+Note that `argv[0]` "should point to a filename string that is associated with
+the process being started"; this utility may be useful to test programs whose
+behaviour depends on the name they're called by.
+
+Additionally, it can be used to run a program with no arguments at all, which
+on many systems cannot be achieved at all using standard utilities. Note that
+programs are likely to misbehave when called this way.
