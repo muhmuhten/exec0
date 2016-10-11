@@ -1,6 +1,11 @@
-all:	exec0
-clean:
-	rm -f exec0
+it:	all
 
-exec0:	exec0.c
-	cc -pipe -Wall -pedantic -Os -o $@ $>
+progs :=	exec0
+
+all:	$(progs)
+clean:
+	rm -f $(progs)
+
+.SUFFIXES:	.c
+.c:
+	cc -pipe -Wall -pedantic -Os -o $@ $<
