@@ -8,4 +8,4 @@ clean:
 
 .SUFFIXES:	.c
 .c:
-	cc -pipe -Wall -pedantic -Os -o $@ $<
+	cc -pipe -Wall -pedantic -Os -s -o $@ $<
