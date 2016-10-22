@@ -1,11 +1,8 @@
 it:	all
 
-progs :=	exec0
+PROGS	:=	exec0
+CFLAGS	+=	-Wall -pedantic -s
 
-all:	$(progs)
+all:	$(PROGS)
 clean:
-	rm -f $(progs)
-
-.SUFFIXES:	.c
-.c:
-	cc -pipe -Wall -pedantic -Os -s -o $@ $<
+	rm -f $(PROGS)
